@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -77,9 +78,9 @@ export default function VolunteerPage() {
                         {opp.description}
                       </p>
                     </div>
-                    <button className="bg-primary text-white px-8 py-3 font-label text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-secondary transition-all duration-300 hover-lift whitespace-nowrap">
+                    <Link href="/volunteer" className="bg-primary text-white px-8 py-3 font-label text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-secondary transition-all duration-300 hover-lift whitespace-nowrap inline-block">
                       Learn More
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -95,12 +96,12 @@ export default function VolunteerPage() {
               Whether you have a few hours a week or can commit fully to the campaign, there's a role for you. Together, we will build the sovereign future we envision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-primary px-8 py-3 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-slate-100 transition-all hover-lift">
+              <Link href="/volunteer" className="bg-white text-primary px-8 py-3 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-slate-100 transition-all hover-lift inline-block text-center">
                 Sign Up to Volunteer
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-white/10 transition-all">
+              </Link>
+              <Link href="/about" className="border-2 border-white text-white px-8 py-3 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-white/10 transition-all inline-block text-center">
                 Schedule a Chat
-              </button>
+              </Link>
             </div>
           </div>
         </section>

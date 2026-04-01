@@ -66,30 +66,6 @@ export default function ShopDetailPage({ params }) {
                   {product.description}
                 </p>
 
-                <div className="space-y-4 mb-8">
-                  <div>
-                    <label className="font-label text-xs uppercase tracking-widest block mb-2">
-                      Quantity
-                    </label>
-                    <select className="w-full border border-outline-variant p-3 font-body bg-surface text-on-surface hover:border-primary transition-colors">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <button className="w-full bg-primary text-white py-4 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-secondary transition-all duration-300 hover-lift">
-                    Add to Cart
-                  </button>
-                  <button className="w-full border-2 border-primary text-primary py-4 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-surface-container-low transition-all duration-300">
-                    Add to Wishlist
-                  </button>
-                </div>
-
                 {/* Product Details */}
                 <div className="mt-12 pt-8 border-t border-outline-variant/20">
                   <h3 className="font-headline text-xl italic mb-6">

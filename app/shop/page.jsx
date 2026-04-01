@@ -5,6 +5,10 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export default function ShopPage() {
+  const handleAddToCart = () => {
+    alert('Added to cart!')
+  }
+
   const products = [
     {
       id: 1,
@@ -77,7 +81,7 @@ export default function ShopPage() {
                     <p className="font-label text-lg font-bold text-primary">
                       {product.price}
                     </p>
-                    <button className="mt-4 w-full bg-primary text-white py-3 font-label text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-secondary transition-all duration-300 hover-lift">
+                    <button onClick={handleAddToCart} className="mt-4 w-full bg-primary text-white py-3 font-label text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-secondary transition-all duration-300 hover-lift">
                       Add to Cart
                     </button>
                   </div>

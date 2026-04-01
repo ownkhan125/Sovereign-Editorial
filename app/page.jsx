@@ -25,12 +25,12 @@ export default function Home() {
                 Redefining the standard of leadership through architectural integrity, measured policy, and a commitment to the collective progress of our sovereign state.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-gradient-to-r from-primary to-primary-container text-white px-10 py-4 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:shadow-2xl hover-lift transition-all duration-500">
+                <Link href="/volunteer" className="bg-gradient-to-r from-primary to-primary-container text-white px-10 py-4 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:shadow-2xl hover-lift transition-all duration-500">
                   Join the Movement
-                </button>
-                <button className="bg-surface-container-lowest border border-outline-variant/20 px-10 py-4 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-surface-container-low transition-all duration-300">
+                </Link>
+                <Link href="/issues" className="bg-surface-container-lowest border border-outline-variant/20 px-10 py-4 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-surface-container-low transition-all duration-300">
                   Read the Platform
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -282,9 +282,9 @@ export default function Home() {
               ))}
             </div>
 
-            <button className="bg-white text-primary px-16 py-5 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-slate-100 transition-all hover-lift">
+            <Link href="/donation" className="bg-white text-primary px-16 py-5 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-slate-100 transition-all hover-lift inline-block">
               Contribute Now
-            </button>
+            </Link>
             <p className="mt-8 text-[10px] text-white/40 uppercase tracking-widest">
               Federal law requires us to use our best efforts to collect and report the name, address, occupation, and employer.
             </p>

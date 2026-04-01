@@ -7,10 +7,13 @@ export default function Navigation() {
   const pathname = usePathname()
 
   const navLinks = [
+    { href: '/', label: 'Home' },
     { href: '/issues', label: 'Issues' },
+    { href: '/complain', label: 'Complaints' },
     { href: '/shop', label: 'Shop' },
-    { href: '/volunteer', label: 'Volunteer' },
     { href: '/news', label: 'News' },
+    { href: '/volunteer', label: 'Volunteer' },
+    { href: '/donation', label: 'Donate' },
     { href: '/about', label: 'About' },
   ]
 
@@ -47,12 +50,12 @@ export default function Navigation() {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="hidden lg:flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-widest text-on-surface hover:text-red-700 hover:scale-105 transition-all duration-300 active:scale-95">
+          <Link href="/volunteer" className="hidden lg:flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-widest text-on-surface hover:text-red-700 hover:scale-105 transition-all duration-300 active:scale-95">
             Join Us
-          </button>
-          <button className="bg-gradient-to-tr from-primary to-primary-container text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest rounded-sm hover:translate-y-[-2px] transition-all duration-300 active:scale-95 shadow-lg shadow-primary/10">
+          </Link>
+          <Link href="/donation" className="bg-gradient-to-tr from-primary to-primary-container text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest rounded-sm hover:translate-y-[-2px] transition-all duration-300 active:scale-95 shadow-lg shadow-primary/10">
             Donate Now
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

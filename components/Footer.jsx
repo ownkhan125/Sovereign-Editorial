@@ -23,11 +23,14 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <h5 className="font-headline text-xl italic text-[#04072E] dark:text-white mb-2">Navigate</h5>
           {[
+            { href: '/', label: 'Home' },
             { href: '/issues', label: 'Issues' },
+            { href: '/complain', label: 'Complaints' },
+            { href: '/shop', label: 'Shop' },
             { href: '/news', label: 'News' },
-            { href: '/', label: 'The Campaign' },
             { href: '/volunteer', label: 'Volunteer' },
-            { href: '/careers', label: 'Careers' },
+            { href: '/donation', label: 'Donate' },
+            { href: '/about', label: 'About' },
           ].map(link => (
             <Link
               key={link.href}
