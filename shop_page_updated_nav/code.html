@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@300;400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#f2f0f0",
+              "surface-container-high": "#e9e8e7",
+              "tertiary-fixed": "#e0e0ff",
+              "on-surface-variant": "#46464e",
+              "primary": "#04072E",
+              "on-secondary": "#ffffff",
+              "surface-variant": "#e4e2e2",
+              "on-tertiary-fixed-variant": "#363e91",
+              "surface-container-low": "#f5f3f3",
+              "surface": "#fbf9f9",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#c0c3f3",
+              "surface-container": "#efeded",
+              "secondary": "#bb000f",
+              "on-tertiary-fixed": "#010766",
+              "tertiary-fixed-dim": "#bec2ff",
+              "surface-container-highest": "#e4e2e2",
+              "secondary-container": "#e51c1f",
+              "on-primary-fixed": "#14183d",
+              "primary-fixed": "#dfe0ff",
+              "tertiary": "#000000",
+              "outline": "#77767f",
+              "on-surface": "#1b1c1c",
+              "on-secondary-fixed": "#410002",
+              "primary-container": "#14183d",
+              "inverse-surface": "#303031",
+              "secondary-fixed": "#ffdad5",
+              "on-secondary-container": "#fffbff",
+              "on-primary-fixed-variant": "#40446b",
+              "on-background": "#1b1c1c",
+              "outline-variant": "#c7c5cf",
+              "error-container": "#ffdad6",
+              "surface-bright": "#fbf9f9",
+              "on-tertiary": "#ffffff",
+              "on-primary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#ffb4ab",
+              "on-secondary-fixed-variant": "#930009",
+              "surface-dim": "#dbdad9",
+              "on-tertiary-container": "#747cd3",
+              "inverse-primary": "#c0c3f3",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#7d81ac",
+              "surface-tint": "#575b85",
+              "tertiary-container": "#010766",
+              "background": "#fbf9f9",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Public Sans", "sans-serif"],
+              "label": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .editorial-header-overlap {
+        margin-top: -2.75rem;
+      }
+      .subtle-glass {
+        backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.8);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #04072E 0%, #14183d 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar from COMPONENTS_15 -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-10">
+<span class="text-2xl font-serif italic text-[#04072E] dark:text-white tracking-tight">The Sovereign Editorial</span>
+<div class="hidden lg:flex gap-6 items-center">
+<a class="font-label uppercase tracking-widest text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">Issues</a>
+<a class="font-label uppercase tracking-widest text-xs text-[#04072E] dark:text-white border-b-2 border-red-700 pb-1 font-semibold" href="#">Shop</a>
+<a class="font-label uppercase tracking-widest text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">Volunteer</a>
+<a class="font-label uppercase tracking-widest text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">News</a>
+<a class="font-label uppercase tracking-widest text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">About</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex items-center bg-surface-container rounded-sm px-4 py-2 mr-4 border border-outline-variant/30">
+<span class="material-symbols-outlined text-on-surface-variant text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 font-label" placeholder="Search boutique" type="text"/>
+</div>
+<button class="font-label uppercase tracking-widest text-xs font-bold text-[#04072E] dark:text-slate-100 px-4 py-2 hover:text-red-700 transition-colors duration-300 transform active:scale-95">Join Us</button>
+<button class="font-label uppercase tracking-widest text-xs font-bold bg-primary text-on-primary px-6 py-2 rounded-sm primary-gradient transform transition-transform hover:scale-95 duration-200">Donate Now</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Banner Section -->
+<section class="max-w-screen-2xl mx-auto px-6 mb-20">
+<div class="relative h-[614px] overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover" data-alt="Close up of high quality woven fabric with red and white nautical patterns, dramatic lighting, premium editorial texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3_jdclKebzF1KQDUAgFO8nAZ2fbB0uIjlzVs7XOuz1otewtrnybdLFN4f0dtQixCE9cO-G1eAsn7uKQ16XAuCMMLcRPAaHAZ4P5iMAeYFQKVFME6wyf3856kad1rUpoWjEaSGTtEYKiUX3r-biqdgF6Gk906ImV2yibpbDmM_hplpoFWeSPmTh1cNElfx1ohREhUh2B4kWUQ1twU5_zsreAB8JomemFcLyh2PS8fGJ1YtSC03AGcCzEvwqonpd4oSIfH7UvTba0tv"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#04072E]/80 to-transparent flex items-center px-12">
+<div class="max-w-2xl">
+<span class="font-label uppercase tracking-[0.3em] text-white/70 text-xs mb-4 block">Official Merchandise</span>
+<h1 class="font-headline text-6xl md:text-8xl text-white italic leading-tight mb-8">Elegance in Advocacy.</h1>
+<p class="font-body text-white/80 text-lg max-w-md leading-relaxed mb-10">Premium essentials crafted for the discerning supporter. Every purchase directly funds the campaign for a more refined future.</p>
+<a class="inline-flex items-center text-white border-b border-white/40 pb-2 hover:border-white transition-all group" href="#collection">
+<span class="font-label uppercase tracking-widest text-sm">Explore Collection</span>
+<span class="material-symbols-outlined ml-4 group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Grid Section -->
+<section class="max-w-screen-2xl mx-auto px-6" id="collection">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface italic">The Core Series</h2>
+<p class="font-body text-on-surface-variant mt-2">Finely tailored apparel and purposeful objects.</p>
+</div>
+<div class="flex gap-8 border-b border-outline-variant/30 pb-2">
+<button class="font-label uppercase text-xs tracking-widest font-bold text-secondary">All Items</button>
+<button class="font-label uppercase text-xs tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">Apparel</button>
+<button class="font-label uppercase text-xs tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">Headwear</button>
+<button class="font-label uppercase text-xs tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">Signage</button>
+</div>
+</div>
+<!-- Bento/Editorial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- Product 1: Large Feature -->
+<div class="md:col-span-7 group">
+<div class="bg-surface-container-low aspect-[16/10] overflow-hidden relative mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist heavy cotton white t-shirt hanging on a designer wooden rack against a beige limestone wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ1y0FRjO6X_hpFMoD2wxwJVbvjEKxQmkXf0-tTMZaPnl6ObYpv5GsqME-6A_ATLCtVsU6ija_ZmMXRQEOtQNE0Io8pKbvQWJ3XkBaIAbXsNtiGBWt6DcFN2ULHfLPSC428fdDJMTGgPlZE_9kICGYXQtqV6HK53ZriMRXnzXHkHukSrSuyVUbiNqEBjA2OzFKwHy3DG1B2BdhmtWEF7YR8lSJx_hIs18ID9M3b2heplexFTa9yDt6UXosXkrV6dNSLDan0QsHk7Nj"/>
+<div class="absolute top-6 left-6">
+<span class="bg-secondary text-white font-label text-[10px] uppercase tracking-tighter px-3 py-1">Limited Edition</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl italic">The Statesman Tee</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Ethically sourced heavy-weight cotton, neutral white.</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-xl">$45.00</span>
+<button class="block mt-2 font-label uppercase text-[10px] tracking-widest text-secondary border-b border-transparent hover:border-secondary transition-all">Add to bag</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="md:col-span-5 group pt-12 md:pt-24">
+<div class="bg-surface-container-low aspect-square overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a deep navy blue high-quality baseball cap with minimalist white embroidered monogram" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIggabMEI1pmc7QGXzrwFiQ7UR83ZnnWi_gYUikIJl4j2x7FqTAvZE5HnkCjczeQ1q_TJHkXvoNk05mR-5AU_3iGF_XjpWPjzLzwx9jj3_VHmV9JFc_-uHpWE-fgpZ7uwX7WOhsuMzlDB2hGOkllr09jIWJQtEG6gjMwPeuS_8p9s4PLBj-zjDZ171R8Ychlow3V2BmYmj6iBRXXPAngGCiC6-cZ-vzuFCOe6W8VJrLRC-hGCAeDaKp07LE31wx3QevwwO-2a56FoJ"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl italic">Navy Monogram Cap</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Structured 6-panel silhouette.</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-xl">$32.00</span>
+<button class="block mt-2 font-label uppercase text-[10px] tracking-widest text-secondary border-b border-transparent hover:border-secondary transition-all">Add to bag</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-low aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Elegant cream colored hoodie made from premium fleece displayed in a high-end boutique setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXCeK7xf6JFQrDvp7vNnK_gA80gz-qilg4ShxU5dEP0ngqHvW_cAN44e44297lUrJVmpX1OtOkoJzB09rD2Vd-Hi8JHtLOJk_cwCzSPL5ETqMH1-ZBagHQAx0j01Q-G7O_HT3zWosBfOlj3krMNL1dE33eNc7dn76CvIjW-2BjBmIEo6fl8Gs_bJoWzkmS-Tzmtjqtdu6TqbUted4bqOOKCoCh9CBifCk3gwLakHLd0FD4LSYR0wE8Tay8Fxb-xUqcJ2WYuWMbK5DD"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl italic">Foundations Hoodie</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Brushed French Terry, Cream.</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-xl">$85.00</span>
+<button class="block mt-2 font-label uppercase text-[10px] tracking-widest text-secondary border-b border-transparent hover:border-secondary transition-all">Add to bag</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-low aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sleek modern yard sign with minimalist typography and premium matte finish against a manicured lawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLsRh_k3HoluKQmxSt7NO4FR8OLDAoDzUtoAiWa-klifQRKDkO-0zMTLuj00fczeK6uGyITe6JbtKaNnkrqIMv_dwCtc2rseQ5ECP70nF2Uq3-bSrbOWqjXfQfVVakn_PpKnezKfRg2Pi4L_Lmva3O83v_AQWuIA76TPgRkz-td-gl-sNMdC0d4qy07VOyBJNZYKrcp2ANkhu1NLMP7NdhVGnQA7hcGkTuHqHzZJIDOgbhZfzcX5_a62VFiOp3mYyRGO6kLqnF9k8A"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl italic">The Visionary Sign</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Double-sided, matte weather-proof finish.</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-xl">$15.00</span>
+<button class="block mt-2 font-label uppercase text-[10px] tracking-widest text-secondary border-b border-transparent hover:border-secondary transition-all">Add to bag</button>
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-low aspect-[4/5] overflow-hidden mb-6">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Set of architectural pins and buttons with metallic finish displayed on a dark velvet cushion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAmKYDsbr7IXy9J8hihJ4mB9FDXlwvpnCxrq-tbt1gEY1oIXX1zr-ni_s3Mf29GnwE53FhWOebrX742mXxqWn5fQ8Xvti1lc2ujsF_yY2jMjab12aKPwpuwolWlZ-ItsNyJ9u22_Lk0UpO-zk6AUYAQzs0cdujwZmvOIMvRnwGrx0R3CvJ3SI8iq4qQHh1S3nGyl4WpGEcWZCZEZvHCUUtNi8uZlVQYvSllICiLNG3G07xI2almLEDOiiegaVSR1fgiq14mU8BrEpp"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl italic">Insignia Pin Set</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Polished brass, set of three.</p>
+</div>
+<div class="text-right">
+<span class="font-headline text-xl">$24.00</span>
+<button class="block mt-2 font-label uppercase text-[10px] tracking-widest text-secondary border-b border-transparent hover:border-secondary transition-all">Add to bag</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Join Us Policy Card Pattern -->
+<section class="max-w-screen-2xl mx-auto px-6 mt-32">
+<div class="bg-surface-container-low relative p-12 md:p-24 overflow-visible">
+<div class="md:w-2/3">
+<h2 class="font-headline text-5xl md:text-7xl italic editorial-header-overlap text-[#04072E]">Keep the Tradition Alive.</h2>
+<p class="font-body text-on-surface-variant text-lg mt-8 mb-12 max-w-lg">Receive early access to limited edition drops and editorial pieces from the Campaign Statesman.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md">
+<div class="flex-grow">
+<input class="w-full bg-transparent border-none border-b border-outline-variant/50 focus:border-secondary focus:ring-0 px-0 py-3 font-label text-sm transition-all" placeholder="Email Address" type="email"/>
+</div>
+<button class="bg-primary text-on-primary font-label uppercase tracking-widest text-xs px-8 py-3 rounded-sm primary-gradient transition-all hover:translate-y-[-2px] hover:shadow-lg" type="submit">Subscribe</button>
+</form>
+</div>
+<div class="hidden lg:block absolute right-12 bottom-12 w-64 h-64 opacity-10">
+<span class="material-symbols-outlined text-[16rem]">auto_awesome_mosaic</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer from COMPONENTS_15 -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 transition-opacity duration-500">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="md:col-span-1">
+<span class="text-xl font-serif text-[#04072E] dark:text-white block mb-6">The Sovereign Editorial</span>
+<p class="font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400">Defining the standard of digital political discourse with integrity, elegance, and unwavering vision.</p>
+</div>
+<div>
+<h4 class="font-headline text-xl mb-6 text-[#04072E] dark:text-slate-100">Collections</h4>
+<ul class="space-y-4 font-body text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4" href="#">Spring Apparel</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4" href="#">Classic Signage</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4" href="#">Editorial Prints</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4" href="#">Accessories</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-xl mb-6 text-[#04072E] dark:text-slate-100">Information</h4>
+<ul class="space-y-4 font-body text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4" href="#">Press Kit</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-xl mb-6 text-[#04072E] dark:text-slate-100">Support</h4>
+<p class="font-body text-sm leading-relaxed text-slate-500 dark:text-slate-400 mb-6 italic">Our customer concierge is available for all boutique inquiries.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 hover:text-red-700 cursor-pointer">mail</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-red-700 cursor-pointer">share</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-red-700 cursor-pointer">public</span>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-slate-200/50 dark:border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-body text-xs text-slate-500 dark:text-slate-400">© 2024 The Sovereign Editorial. All rights reserved. Paid for by the Sovereign Committee.</p>
+<div class="flex gap-8">
+<span class="font-label uppercase text-[10px] tracking-widest text-slate-400">London</span>
+<span class="font-label uppercase text-[10px] tracking-widest text-slate-400">New York</span>
+<span class="font-label uppercase text-[10px] tracking-widest text-slate-400">Paris</span>
+</div>
+</div>
+</footer>
+</body></html>

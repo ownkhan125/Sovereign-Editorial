@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#fbf9f9",
+                        "secondary-fixed-dim": "#ffb4ab",
+                        "on-primary-fixed-variant": "#40446b",
+                        "error": "#ba1a1a",
+                        "on-background": "#1b1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#14183d",
+                        "tertiary-fixed": "#e0e0ff",
+                        "on-secondary-fixed-variant": "#930009",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#303031",
+                        "surface-container-low": "#f5f3f3",
+                        "secondary-container": "#e51c1f",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e9e8e7",
+                        "on-secondary-fixed": "#410002",
+                        "secondary-fixed": "#ffdad5",
+                        "surface-bright": "#fbf9f9",
+                        "error-container": "#ffdad6",
+                        "primary": "#000000",
+                        "on-secondary-container": "#fffbff",
+                        "primary-fixed": "#dfe0ff",
+                        "on-surface": "#1b1c1c",
+                        "surface-container-highest": "#e4e2e2",
+                        "surface-container": "#efeded",
+                        "secondary": "#bb000f",
+                        "inverse-on-surface": "#f2f0f0",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#575b85",
+                        "inverse-primary": "#c0c3f3",
+                        "surface-dim": "#dbdad9",
+                        "on-tertiary-container": "#747cd3",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#010766",
+                        "on-tertiary-fixed": "#010766",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#000000",
+                        "on-tertiary-fixed-variant": "#363e91",
+                        "primary-fixed-dim": "#c0c3f3",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface-variant": "#46464e",
+                        "tertiary-fixed-dim": "#bec2ff",
+                        "on-primary-container": "#7d81ac",
+                        "outline": "#77767f",
+                        "background": "#fbf9f9",
+                        "outline-variant": "#c7c5cf",
+                        "primary-container": "#14183d"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .policy-card-overlay {
+            background: linear-gradient(to top, rgba(4, 7, 46, 0.9) 0%, rgba(4, 7, 46, 0.4) 50%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md transition-all duration-400 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto h-20">
+<div class="text-2xl font-['Newsreader'] italic text-[#04072E] dark:text-white tracking-tight font-bold">
+            The Sovereign Editorial
+        </div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-slate-600 dark:text-slate-400 font-medium font-['Newsreader'] text-lg tracking-tight hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">Issues</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-['Newsreader'] text-lg tracking-tight hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">Shop</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-['Newsreader'] text-lg tracking-tight hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">Volunteer</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium font-['Newsreader'] text-lg tracking-tight hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">News</a>
+<a class="text-[#04072E] dark:text-white font-semibold border-b-2 border-red-700 dark:border-red-500 pb-1 font-['Newsreader'] text-lg tracking-tight" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-[#04072E] dark:text-slate-100 cursor-pointer" data-icon="search">search</span>
+<button class="bg-primary text-on-primary px-6 py-2.5 text-sm font-label font-bold uppercase tracking-widest rounded-sm hover:translate-y-[-2px] transition-all duration-300 shadow-lg shadow-primary/10 active:scale-95 active:duration-100">
+                Donate Now
+            </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 max-w-7xl mx-auto px-8">
+<!-- Header Section -->
+<header class="mb-20 max-w-3xl">
+<div class="font-label text-secondary font-bold tracking-[0.2em] uppercase text-xs mb-4">Institutional Priorities</div>
+<h1 class="font-headline text-6xl md:text-8xl text-on-surface tracking-tighter leading-[0.9] mb-8">
+                The Architect’s <span class="italic font-light">Vision.</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed font-light">
+                Our policy framework rejects the ephemeral for the enduring. We present a roadmap designed for stability, prosperity, and the restoration of institutional trust.
+            </p>
+</header>
+<!-- Editorial Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<!-- Major Policy Area: Economy -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low min-h-[600px] flex items-end p-12">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" data-alt="Modern architectural detail of a financial district skyscraper with glass reflections and deep blue evening shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgiy5jReDFpNp5WCdH93XhEcyNipy7-Kt8xPuSqqBT2-3KlXrWp3XF3SWK9p05Hbs6_32t6-fBEW5ym-_RjEud1g3FKOqNxifVxv3vw-DBWEehHVWHSSR273HzjPdJZkdXg24-f1__6ZdaXSq5UFzoK7mYecG8uZRVBzUmIo8DsTdvg7xuJzW1TSH1VPVKnpGLJV9_jtb_EpUs_44RayrvsoIhtVoFmByJDHcuae7peYyaBDEgjL6LPYQisigAcStEPCCEIctXUUKg"/>
+<div class="absolute inset-0 policy-card-overlay"></div>
+<div class="relative z-10 w-full">
+<div class="flex items-center gap-4 mb-6">
+<span class="h-[1px] w-12 bg-secondary"></span>
+<span class="font-label text-on-secondary text-xs uppercase tracking-widest font-semibold">Economic Revitalization</span>
+</div>
+<h2 class="font-headline text-5xl md:text-6xl text-white tracking-tight leading-none mb-6">
+                        The Wealth of <br/><span class="italic">New Nations.</span>
+</h2>
+<p class="font-body text-white/80 text-lg max-w-lg mb-8 leading-relaxed">
+                        A modern fiscal strategy focused on decentralized growth, algorithmic transparency, and sustainable industrial autonomy.
+                    </p>
+<a class="inline-flex items-center gap-3 text-white font-label text-sm uppercase tracking-widest font-bold group/btn transition-all" href="#">
+                        View Details
+                        <span class="material-symbols-outlined text-secondary transition-transform duration-300 group-hover/btn:translate-x-2" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Side Card: Healthcare -->
+<div class="md:col-span-4 flex flex-col gap-12">
+<div class="bg-surface-container-high p-8 flex-1 border-t-4 border-secondary">
+<div class="font-label text-secondary font-bold text-[10px] uppercase tracking-widest mb-6">Social Welfare</div>
+<h3 class="font-headline text-4xl text-primary leading-tight mb-4">The Longevity Protocol</h3>
+<p class="font-body text-on-surface-variant mb-8 text-base">
+                        Redefining public health through preventative biotechnology and accessible specialty care networks.
+                    </p>
+<a class="text-primary font-label text-xs uppercase tracking-widest font-bold border-b border-primary/20 pb-1 hover:border-secondary transition-colors" href="#">
+                        View Details
+                    </a>
+</div>
+<div class="relative flex-1 group overflow-hidden bg-surface-container-low min-h-[300px] p-8 flex items-end">
+<img alt="" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105" data-alt="Interior of a modern high-tech research laboratory with clean white lines and soft blue ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0IcM2LogBdiaL6Y2H2qZIAlKCE_BhBdfYEqdlnr7r0rVblHiFKQt09v1yw3eCUE1CCV4bsFgjxc28A6TxH5lz0PbBkWlLt2J_YvzeKU6-0k208Oy-bioyX3hhszoFuAew4VsLr3XjFjSVFNHdkViTI94uR4rjUdsiRikaVJ8mOTFJ-veecWybqFFmuRHvE7EjgoqFhL7O7pN5e70S4shrdaeG4xwsY2rQKK0DqPjEaOs05e2rz2SmgM2U0Ehdef3jLGBMyxVBP_aK"/>
+<div class="absolute inset-0 bg-primary/40"></div>
+<div class="relative z-10">
+<h3 class="font-headline text-3xl text-white mb-4">Scientific Integrity</h3>
+<a class="text-white/90 font-label text-xs uppercase tracking-widest font-bold flex items-center gap-2" href="#">
+                            View Details <span class="material-symbols-outlined text-xs" data-icon="north_east">north_east</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Wide Card: Education -->
+<div class="md:col-span-12 group relative bg-surface-container-low min-h-[500px] flex items-center overflow-hidden">
+<div class="w-full md:w-1/2 p-12 md:p-20 relative z-10">
+<div class="font-label text-secondary font-bold text-xs uppercase tracking-widest mb-6">Future Generations</div>
+<h2 class="font-headline text-5xl md:text-6xl text-on-surface tracking-tight leading-none mb-6">
+                        The Classical <span class="italic">Modernist.</span>
+</h2>
+<p class="font-body text-on-surface-variant text-lg mb-10 leading-relaxed max-w-md">
+                        Our education reform pairs rigorous classical curricula with advanced technical mastery for the 22nd century.
+                    </p>
+<button class="bg-primary text-on-primary px-10 py-4 font-label text-sm uppercase tracking-[0.2em] font-bold hover:bg-secondary transition-colors">
+                        View Details
+                    </button>
+</div>
+<div class="absolute right-0 top-0 w-full h-full md:w-1/2 opacity-30 md:opacity-100">
+<img alt="" class="w-full h-full object-cover grayscale-[0.5]" data-alt="Rows of antique leather-bound books in a grand mahogany library with soft sunlight filtering through windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRU0zz6JrYVlaYNqIii_E0c9L8wUU4UbQzs6JVW5_YRYm7UMDOOEXmollZkal4Yp3Sfj11l9J54SLWy1HwKchRKDnZUpDFsAUwXCDGLg19xea1qOsS7HaR01vv7jE7oG_fynpd8Wfz39Sspq7VBWK5k-FPWqSSObR8HB3xb1TcdSzDL36U5OYy7wOV-Od_5TdLKCrKXYS92WSEse1ZraFw7FKmAMjXT530JOXuqleHBD5ubxebPolm6sP-gD7bWRJY7-ssuIzWtHPi"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-low via-transparent to-transparent hidden md:block"></div>
+</div>
+</div>
+<!-- Smaller Tertiary Cards -->
+<div class="md:col-span-6 bg-surface-container p-12 relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline text-4xl mb-6">Environmental Stewardship</h3>
+<p class="font-body text-on-surface-variant mb-8 leading-relaxed">
+                        A conservative approach to conservation. Protecting the heritage of our landscape through private-public land trusts and nuclear expansion.
+                    </p>
+<a class="text-secondary font-label text-sm uppercase tracking-widest font-bold" href="#">
+                        Read Policy Paper
+                    </a>
+</div>
+<span class="absolute bottom-[-2rem] right-[-2rem] material-symbols-outlined text-[15rem] text-on-surface/[0.03]" data-icon="nature">nature</span>
+</div>
+<div class="md:col-span-6 bg-[#04072E] text-white p-12 flex flex-col justify-between">
+<div>
+<div class="font-label text-secondary font-bold text-xs uppercase tracking-widest mb-6">Global Policy</div>
+<h3 class="font-headline text-4xl mb-6">Diplomatic Realism</h3>
+<p class="font-body text-white/60 mb-8 leading-relaxed">
+                        An era of clear interests and firm boundaries. Strengthening alliances while prioritizing sovereign integrity and economic security.
+                    </p>
+</div>
+<a class="flex items-center justify-between border-t border-white/10 pt-6 group" href="#">
+<span class="font-label text-sm uppercase tracking-widest font-bold">View Details</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 transition-opacity duration-500">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-['Newsreader'] text-xl text-[#04072E] dark:text-white font-bold mb-4">The Sovereign Editorial</div>
+<p class="font-['Public_Sans'] text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+            © 2024 The Sovereign Editorial. All rights reserved. Paid for by the Sovereign Committee.
+        </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-['Newsreader'] text-lg text-[#04072E] dark:text-slate-100 font-bold mb-6">Engagement</h4>
+<div class="flex flex-col gap-4">
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4 transition-all" href="#">Press Kit</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4 transition-all" href="#">Careers</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4 transition-all" href="#">FAQ</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-['Newsreader'] text-lg text-[#04072E] dark:text-slate-100 font-bold mb-6">Information</h4>
+<div class="flex flex-col gap-4">
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4 transition-all" href="#">Privacy Policy</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4 transition-all" href="#">Terms of Service</a>
+<a class="font-['Public_Sans'] text-sm text-slate-500 dark:text-slate-400 hover:underline decoration-red-700 underline-offset-4 transition-all" href="#">Contact Us</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-['Newsreader'] text-lg text-[#04072E] dark:text-slate-100 font-bold mb-6">Stay Informed</h4>
+<div class="flex gap-4">
+<input class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-4 py-2 text-sm w-full focus:outline-none focus:border-red-700" placeholder="Email Address" type="email"/>
+<button class="bg-[#04072E] text-white px-4 py-2 text-xs font-bold uppercase tracking-widest">Join</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

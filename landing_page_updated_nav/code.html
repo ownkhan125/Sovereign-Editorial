@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Sovereign Editorial | A Vision for Tomorrow</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-container-high": "#e9e8e7",
+                        "tertiary-fixed": "#e0e0ff",
+                        "on-surface-variant": "#46464e",
+                        "primary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e4e2e2",
+                        "on-tertiary-fixed-variant": "#363e91",
+                        "surface-container-low": "#f5f3f3",
+                        "surface": "#fbf9f9",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#c0c3f3",
+                        "surface-container": "#efeded",
+                        "secondary": "#bb000f",
+                        "on-tertiary-fixed": "#010766",
+                        "tertiary-fixed-dim": "#bec2ff",
+                        "surface-container-highest": "#e4e2e2",
+                        "secondary-container": "#e51c1f",
+                        "on-primary-fixed": "#14183d",
+                        "primary-fixed": "#dfe0ff",
+                        "tertiary": "#000000",
+                        "outline": "#77767f",
+                        "on-surface": "#1b1c1c",
+                        "on-secondary-fixed": "#410002",
+                        "primary-container": "#14183d",
+                        "inverse-surface": "#303031",
+                        "secondary-fixed": "#ffdad5",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed-variant": "#40446b",
+                        "on-background": "#1b1c1c",
+                        "outline-variant": "#c7c5cf",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fbf9f9",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#ffb4ab",
+                        "on-secondary-fixed-variant": "#930009",
+                        "surface-dim": "#dbdad9",
+                        "on-tertiary-container": "#747cd3",
+                        "inverse-primary": "#c0c3f3",
+                        "on-error-container": "#93000a",
+                        "on-primary-container": "#7d81ac",
+                        "surface-tint": "#575b85",
+                        "tertiary-container": "#010766",
+                        "background": "#fbf9f9",
+                        "error": "#ba1a1a"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 30px 60px -12px rgba(27, 28, 28, 0.08);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/20">
+<!-- TopNavBar (Updated from COMPONENTS_15) -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-10">
+<a class="text-2xl font-serif italic text-[#04072E] dark:text-white tracking-tight" href="#">
+                    The Sovereign Editorial
+                </a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-sans text-xs uppercase tracking-widest text-[#04072E] dark:text-white border-b-2 border-red-700 pb-1 font-semibold" href="#">Issues</a>
+<a class="font-sans text-xs uppercase tracking-widest text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">Shop</a>
+<a class="font-sans text-xs uppercase tracking-widest text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">Volunteer</a>
+<a class="font-sans text-xs uppercase tracking-widest text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">News</a>
+<a class="font-sans text-xs uppercase tracking-widest text-slate-600 dark:text-slate-400 font-medium hover:text-red-700 dark:hover:text-red-500 transition-colors duration-300" href="#">About</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden lg:flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-widest text-on-surface hover:text-red-700 transition-all duration-300 active:scale-95">
+                    Join Us
+                </button>
+<button class="bg-gradient-to-tr from-primary to-primary-container text-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest rounded-sm hover:translate-y-[-2px] transition-all duration-300 active:scale-95 shadow-lg shadow-primary/10">
+                    Donate Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface">
+<div class="max-w-screen-2xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center relative z-10">
+<div class="md:col-span-7 lg:col-span-6 flex flex-col items-start">
+<span class="font-label text-xs font-bold uppercase tracking-[0.3em] text-secondary mb-6 block">The 2024 Campaign</span>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter mb-8 italic">
+                        A Vision for <br/>Tomorrow
+                    </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                        Redefining the standard of leadership through architectural integrity, measured policy, and a commitment to the collective progress of our sovereign state.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-10 py-4 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:shadow-2xl transition-all duration-500">
+                            Join the Movement
+                        </button>
+<button class="bg-surface-container-lowest border border-outline-variant/20 px-10 py-4 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-surface-container-low transition-all duration-300">
+                            Read the Platform
+                        </button>
+</div>
+</div>
+<div class="md:col-span-5 lg:col-span-6 relative h-[600px] md:h-[800px]">
+<div class="absolute inset-0 bg-surface-container-high rounded-sm overflow-hidden editorial-shadow transform rotate-1 translate-x-4">
+<img class="w-full h-full object-cover grayscale brightness-90 contrast-110" data-alt="Dignified statesman in a tailored charcoal suit standing against a neutral classical architectural background with soft natural side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK_n3v-AG72z-1O9sA9CMvDf5MAQBAYR1eu5MIFIKhADOcsmCwNGbWoLxwEqzonY2iRWbrxrrx1IebUwQxHPwshJS63UbQWNZX8dDac6oGRE8n5oTMk_vjxND53ChgauGQAHT4bTTL5dwo3g3F7-0nsjvP9iVvGK0uelystYD9PtuvI3g0Wur-GrlvrOOwty-sJ1GnprUauNoXkljQnj2sJmTiCIibKZfqptc13L_ogLyuT68wquHnZEFJ4SlalZ2Kg779V1XdNDhx"/>
+</div>
+<div class="absolute bottom-[-2rem] left-[-2rem] bg-white p-8 max-w-xs editorial-shadow hidden lg:block">
+<p class="font-headline text-2xl italic mb-4">"The future is not inherited, it is designed by those with the courage to lead."</p>
+<span class="font-label text-[10px] uppercase tracking-widest font-bold opacity-60">— The Statesman</span>
+</div>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low/50 -z-0"></div>
+</section>
+<!-- Current Issues Section (Bento Style) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="font-headline text-5xl md:text-6xl mb-6">Foundations of Progress</h2>
+<p class="font-body text-lg text-on-surface-variant">Our policy framework is built on the pillars of stability, innovation, and unwavering public service.</p>
+</div>
+<a class="font-label text-xs font-bold uppercase tracking-widest text-secondary hover:underline underline-offset-8 transition-all" href="#">View Full Platform</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Policy Card 1 -->
+<div class="md:col-span-8 group relative bg-surface-container-lowest overflow-hidden editorial-shadow h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-20" data-alt="Modern architectural glass facade reflecting the sky at dusk with sharp clean lines and professional aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcFXWBBfMcbymwFuYIzztX5d11JvoYvSPHZQY82vQslm6riez_7T6X4ommr1p1x4wjRjHMZNNRf5VhJrAywE8IiYmbn2S1GNCxmUmsp-SmIlBg45mSh8CjLKs1G3f0j_yMO1HVEKPiEQZuwXKwHUJ5HpE_TUwaur53MAJBYH-_nyF51VbULyzGceOpdYjsSmij2Tw-LcCCyjIhQn7gG5xXq_h66FtDlz5PNXQ5QVfSAbqi1BR0_xCkMNRrRMguf4rX_DDmEDiSwFRy"/>
+<div class="relative z-10 p-12 flex flex-col h-full justify-end">
+<span class="font-label text-[10px] font-bold uppercase tracking-[0.4em] text-secondary mb-4 block">Infrastructure</span>
+<h3 class="font-headline text-4xl mb-6 -mt-16 bg-white p-8 absolute top-12 left-12 inline-block editorial-shadow">Modernizing the Sovereign Grid</h3>
+<p class="max-w-md font-body text-on-surface-variant mb-8">Investing in resilient digital and physical infrastructure to secure our nation's competitive edge in the global market.</p>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Policy Card 2 -->
+<div class="md:col-span-4 bg-primary text-white p-12 flex flex-col justify-between editorial-shadow h-[500px]">
+<div>
+<span class="font-label text-[10px] font-bold uppercase tracking-[0.4em] text-secondary mb-6 block">Economics</span>
+<h3 class="font-headline text-4xl italic leading-tight">A Fiscal Blueprint for Stability</h3>
+</div>
+<div>
+<p class="font-body text-white/70 mb-8 leading-relaxed">Sustainable economic growth through strategic deregulation and support for domestic small-scale industry.</p>
+<a class="font-label text-xs font-bold uppercase tracking-[0.2em] hover:text-secondary transition-colors inline-flex items-center gap-2" href="#">
+                                Detail Report <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Policy Card 3 -->
+<div class="md:col-span-4 bg-white p-12 flex flex-col justify-between h-[450px]">
+<div class="w-16 h-1 bg-secondary mb-8"></div>
+<h3 class="font-headline text-3xl mb-4">Educational Sovereignty</h3>
+<p class="font-body text-on-surface-variant mb-6">Empowering the next generation with specialized vocational training and elite academic standards.</p>
+<div class="mt-auto">
+<img class="w-full h-32 object-cover grayscale opacity-50" data-alt="An empty library with tall bookshelves and a single desk light glowing in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSlCHNH0qBTwt0Bxb7Ma9gbwCyhpZkhw5-I8LSeKVPYHXqaxP8OPs8atTDD4zM81H-Xa35d_SI7hY1eb0vZEUHk2Ds4UfoeaCPLkmUpGj51xp6TO4oLaTknCb3VmoTPXkJYhmEHEkLlbLk2aN1oiTYMKWf-pqsEVXjt-LOxBwRIxCQBhzpMNTQp6WpVqRBoi6a-aasUVwGHf-aiDlpUr1PSP6zb__EqSg2k-HSkT32erdBzw_1hRkj-sAqtyIF6fWtiPD0HA5sMQzV"/>
+</div>
+</div>
+<!-- Policy Card 4 -->
+<div class="md:col-span-8 bg-surface p-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h3 class="font-headline text-4xl mb-6">Environmental Stewardship</h3>
+<p class="font-body text-on-surface-variant mb-8">Protecting our natural landscapes through innovative conservation practices that align with industrial growth.</p>
+<button class="bg-primary text-white px-8 py-3 font-label text-[10px] font-bold uppercase tracking-widest hover:bg-secondary transition-all">Action Plan</button>
+</div>
+<div class="h-full bg-surface-container-high relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Vast cinematic landscape of mist-covered pine forests and calm waters at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMCBjfp2ZVUrj-I2VZAUZSLjrNls1EOIZU51PFENZPgJb-kzxzvki88O9hmYK7eXfDPrwEhpNH1z_5lIQo_pwGkfS-l9isryzW6rXXod6sqeL5tW5G6FlopGPz7fzt2E4r2vD6HNP2-cgFdhBk7HHVTgql-BlBVrYcXRBwo0if5y0LHWNKOQOLaLouJXWmnlJqMZx0CSd6GKNv7Z2tGO6D6OPEeU08pURnS0gvvCaSkc2SvtLpEs4TQNtjYaWnUWRvSNy1mpiCJ5SB"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent News Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-6">
+<div class="grid lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4">
+<div class="sticky top-32">
+<h2 class="font-headline text-5xl mb-8">The Editorial Journal</h2>
+<p class="font-body text-on-surface-variant mb-12">Latest dispatches, policy updates, and insights from the campaign trail. Stay informed on the decisions shaping our collective future.</p>
+<div class="space-y-6">
+<div class="border-b border-outline-variant/20 pb-6">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Upcoming Events</span>
+<h4 class="font-headline text-xl">Metropolitan Town Hall: The Future of Trade</h4>
+<p class="text-xs opacity-60 mt-2">October 24, 2024 • Grand Hall</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-6">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-2">Press Release</span>
+<h4 class="font-headline text-xl">Sovereign Editorial Endorsed by National Industry Board</h4>
+<p class="text-xs opacity-60 mt-2">October 18, 2024</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8">
+<div class="grid gap-12">
+<!-- News Item 1 -->
+<article class="grid md:grid-cols-5 gap-8 group cursor-pointer">
+<div class="md:col-span-2 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dignified office space with heavy wooden desk, a leather chair, and warm morning light coming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT0FmnKnu6uDbDj2ZJ53vkoApDpew5lBC5A_PtEJ_CCivrh7CmnbjUof65gEzWRigQJFMi-cSOnWJ-bNl69V9VGDOv9odY_EluFEvGvLOWZE_f3j4HG1jFreDDPk4myNH_wenXVnIHADo-eVTwApCOTfeobqfkpvZmYagqNowMnEQw9kZDvpirWbZ49DJOXUyFisauRNmtHG4kdRikZumoBXCTlJOLaZwaTFTOq8t47iY_Y_LiyoX_LzefbOpfkDQBRnfTDx4bQFyd"/>
+</div>
+<div class="md:col-span-3 py-4 flex flex-col">
+<span class="font-label text-[10px] font-bold uppercase tracking-[0.3em] text-on-surface-variant mb-4">Deep Dive • 8 Min Read</span>
+<h3 class="font-headline text-3xl mb-4 group-hover:text-secondary transition-colors">The Restoration of Civil Discourse</h3>
+<p class="font-body text-on-surface-variant line-clamp-3 mb-6">How a return to traditional debate formats and architectural governance can heal the fractured landscape of modern political engagement.</p>
+<span class="font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 mt-auto">Read Full Article <span class="material-symbols-outlined text-sm">trending_flat</span></span>
+</div>
+</article>
+<!-- News Item 2 -->
+<article class="grid md:grid-cols-5 gap-8 group cursor-pointer">
+<div class="md:col-span-2 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A man and woman in professional attire looking over large architectural blueprints on a white table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW9EPS-mMUT7Nm_DeoasN0AJN1fHrxEh3SHdDyAiNT46xbMj8-uSwmUNJLmOBMURvSJlIaFrolaeFljumNSTsUaR_Do918rnMXgWvcNU3I90-osk9oIyuhQpbeFkTpKXi6Se3eTXBB1aYzjZSoLiocXR3kdd8JQJ7RhC9U5KKwF0nrJuFUEjuDOOD95cWPmZgz3SmDLFkHIM-kuuq-r8LwxKq-gw4P1lmTb_EMnkwe9rD54DExjjQYHoFGr170-eol999Wkiz2uO0S"/>
+</div>
+<div class="md:col-span-3 py-4 flex flex-col">
+<span class="font-label text-[10px] font-bold uppercase tracking-[0.3em] text-on-surface-variant mb-4">Policy Update • 5 Min Read</span>
+<h3 class="font-headline text-3xl mb-4 group-hover:text-secondary transition-colors">Blueprint for Urban Resilience</h3>
+<p class="font-body text-on-surface-variant line-clamp-3 mb-6">An analysis of our newly released strategy for municipal growth and sustainable urban development in the tri-state area.</p>
+<span class="font-label text-xs font-bold uppercase tracking-widest flex items-center gap-2 mt-auto">Read Full Article <span class="material-symbols-outlined text-sm">trending_flat</span></span>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Support Section (Teaser) -->
+<section class="py-32 relative overflow-hidden">
+<div class="absolute inset-0 -z-10">
+<div class="absolute inset-0 bg-[#04072E]"></div>
+<img class="w-full h-full object-cover opacity-20 mix-blend-overlay" data-alt="Night sky over a silhouetted classical capitol building with a subtle warm glow from the windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHwMkALmOPyCp_-LBJW_aaTKi-pY0fZXbDSqd1jW9yRxcRuxhdwjypZ2YlW6x5UWUty_0XRN5_FV8q9Xj-FXY8JeMlaIdRR8nFrGmmWrjcAVFJLUIez4sSOtkZ3MNw6R3DSsj2BdSc21L4dWVxDTEwXfSqN57LajbGj35lM21p8NnWQPZ7SYM7uM6abVBJtJHXJDNci_xyDEtDpI97g2QvjmXsZ_mn2qgrjm8NeX5A9Yf32RKWvwOGyMeGVNuhPQcYsRpNNEHd6aef"/>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center text-white">
+<span class="font-label text-xs font-bold uppercase tracking-[0.5em] text-secondary mb-8 block">Join the Cause</span>
+<h2 class="font-headline text-5xl md:text-7xl mb-10 italic">Invest in the <br/>Sovereign Future</h2>
+<p class="font-body text-lg text-white/70 mb-12 max-w-2xl mx-auto leading-relaxed">Your support enables the essential work of policy development, grassroots outreach, and the structural reform needed to ensure our vision becomes reality.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+<button class="bg-white/10 hover:bg-white/20 border border-white/20 py-6 font-label text-xl font-bold transition-all">$25</button>
+<button class="bg-white/10 hover:bg-white/20 border border-white/20 py-6 font-label text-xl font-bold transition-all">$100</button>
+<button class="bg-secondary/90 hover:bg-secondary py-6 font-label text-xl font-bold transition-all shadow-xl">$250</button>
+<button class="bg-white/10 hover:bg-white/20 border border-white/20 py-6 font-label text-xl font-bold transition-all">Custom</button>
+</div>
+<button class="bg-white text-primary px-16 py-5 font-label text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-slate-100 transition-all">
+                    Contribute Now
+                </button>
+<p class="mt-8 text-[10px] text-white/40 uppercase tracking-widest">Federal law requires us to use our best efforts to collect and report the name, address, occupation, and employer.</p>
+</div>
+</section>
+</main>
+<!-- Footer (Updated from COMPONENTS_15) -->
+<footer class="w-full bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-opacity duration-500">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-6">
+<a class="text-xl font-serif text-[#04072E] dark:text-white" href="#">The Sovereign Editorial</a>
+<p class="font-sans text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                A new era of political thought and statesmanship, dedicated to the preservation and progress of the sovereign ideal.
+            </p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-headline text-xl italic text-[#04072E] dark:text-white mb-2">Navigate</h5>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">Issues</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">News</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">The Campaign</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">Volunteer</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-headline text-xl italic text-[#04072E] dark:text-white mb-2">Information</h5>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">Press Kit</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">Contact Us</a>
+<a class="text-slate-500 dark:text-slate-400 text-sm font-sans hover:underline decoration-red-700 underline-offset-4" href="#">FAQ</a>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="font-headline text-xl italic text-[#04072E] dark:text-white mb-2">Briefing</h5>
+<p class="text-sm text-slate-500 dark:text-slate-400">Weekly dispatches from the front lines of sovereignty.</p>
+<div class="relative group">
+<input class="w-full bg-transparent border-b border-slate-300 dark:border-slate-700 py-3 px-0 text-sm focus:outline-none focus:border-red-700 transition-colors placeholder:text-slate-400" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 hover:text-red-700 transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto px-12 pb-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-sans text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-widest text-center md:text-left">
+                © 2024 The Sovereign Editorial. All rights reserved. Paid for by the Sovereign Committee.
+            </p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-red-700 transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="text-slate-400 hover:text-red-700 transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+<a class="text-slate-400 hover:text-red-700 transition-colors" href="#"><span class="material-symbols-outlined text-lg">verified_user</span></a>
+</div>
+</div>
+</footer>
+</body></html>

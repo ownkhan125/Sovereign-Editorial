@@ -1,0 +1,25 @@
+{
+  "name": "stitch-sovereign",
+  "version": "1.0.0",
+  "description": "The Sovereign Editorial - Professional Next.js Website",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^16.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.1",
+    "postcss": "8.4.31",
+    "autoprefixer": "10.4.16"
+  },
+  "keywords": ["nextjs", "tailwindcss", "react"],
+  "author": "The Sovereign Editorial",
+  "license": "MIT"
+}
+
