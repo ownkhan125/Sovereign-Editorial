@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { AddToCartButton } from "@/components/AddToCartButton";
 import { getProductById, getProducts } from "@/lib/products";
+import { getPriceById } from "@/lib/price";
 
 export default async function ShopDetailPage({ params }) {
   // Properly handle params in Next.js App Router
@@ -35,6 +36,7 @@ export default async function ShopDetailPage({ params }) {
   }
 
   const product = await getProductById(productId);
+  const price = await getPriceById(productId);
   const relatedProducts = await getProducts();
 
   if (!product) {
@@ -95,7 +97,7 @@ export default async function ShopDetailPage({ params }) {
 
                 <div className="mb-8">
                   <p className="font-label text-3xl font-bold text-primary mb-2">
-                    {product.price || "Price not available"}
+                    {price.prices[0].amount}
                   </p>
                   <p className="font-label text-sm uppercase tracking-widest text-secondary mb-6">
                     In Stock
@@ -103,9 +105,10 @@ export default async function ShopDetailPage({ params }) {
                   <AddToCartButton product={product} />
                 </div>
 
-                <p className="font-body text-lg text-on-surface-variant mb-8 leading-relaxed">
-                  {product.description || "No description available"}
-                </p>
+                <p
+                  className="font-body text-lg text-on-surface-variant mb-8 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: product.description }}
+                />
               </div>
             </div>
           </div>
